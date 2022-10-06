@@ -45,7 +45,7 @@
     }
 
     .subtitle{
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         margin-left: 8rem;
         padding-top: 0.5rem;
     }
@@ -59,6 +59,7 @@
         font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
         color: #FF4545;
         font-size: 1.7rem;
+        padding-top: 3rem;
     }
 
     .info_subheading{

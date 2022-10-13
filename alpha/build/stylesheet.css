@@ -100,14 +100,14 @@
 
     .microinteraction_container{
         cursor: pointer;
-        width: 32.25rem;
-        height: 43.35rem;
+        width: 43rem;
+        height: 57.8rem;
         margin: 4rem auto;
         display: block;
 
         /* background-color: lightblue; */
         background-image: url("WebImages/frame_build_01.jpg");
-        background-size: 32.25rem;
+        width: 43rem;
         box-shadow: -10px -10px 15px rgba(238, 238, 238, 0.5),
         10px 10px 15px rgba(182, 182, 182, 0.12);
     }
@@ -118,18 +118,17 @@
     }
 
     .heart_icon{
-        width: 5rem;
+        width: 6rem;
         float: right;
-        padding-right: 3rem;
-        padding-top: 3rem;
+        padding-right: 4rem;
+        padding-top: 4rem;
         opacity: 0;
     }
 
     .panel_mode{
-        width: 32.25rem;
+        width: 43rem;
         float: bottom;
-        padding-bottom: 3rem;
-        padding-top: 23.058rem;
+        padding-top: 31.4rem;
         opacity: 0;
     }
 
@@ -160,7 +159,6 @@
             text-align: center;
             margin-top: 0rem;
             padding-top: 5rem;
-            margin-bottom: 0;
         }
 
         .build_subtitle{

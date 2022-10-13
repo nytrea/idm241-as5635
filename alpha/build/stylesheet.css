@@ -29,6 +29,14 @@
         padding-top: 5rem;
     }
 
+    .build_subtitle{
+        color: #FF4545;
+        font-size: 1.5rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 
     .info_div{
         margin-left: 8rem;
@@ -92,14 +100,14 @@
 
     .microinteraction_container{
         cursor: pointer;
-        width: 43rem;
-        height: 57.81rem;
+        width: 32.25rem;
+        height: 43.35rem;
         margin: 4rem auto;
         display: block;
 
         /* background-color: lightblue; */
         background-image: url("WebImages/frame_build_01.jpg");
-        /* background-size: 22rem; */
+        background-size: 32.25rem;
         box-shadow: -10px -10px 15px rgba(238, 238, 238, 0.5),
         10px 10px 15px rgba(182, 182, 182, 0.12);
     }
@@ -110,12 +118,27 @@
     }
 
     .heart_icon{
-        width: 6rem;
+        width: 5rem;
         float: right;
-        padding-right: 4rem;
-        padding-top: 4rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
         opacity: 0;
     }
+
+    .panel_mode{
+        width: 32.25rem;
+        float: bottom;
+        padding-bottom: 3rem;
+        padding-top: 23.058rem;
+        opacity: 0;
+    }
+
+
+    .microinteraction_container:hover .panel_mode{
+        opacity: 100;
+        transition: ease-in, 0.15s;
+    }
+  
 
 }
 
@@ -137,12 +160,24 @@
             text-align: center;
             margin-top: 0rem;
             padding-top: 5rem;
+            margin-bottom: 0;
+        }
+
+        .build_subtitle{
+            color: #FF4545;
+            font-size: 1.5rem;
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
     
 
         .info_div{
             margin-left: 8rem;
             margin-right: 8rem;
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            
         }
 
         .row{
@@ -164,9 +199,7 @@
             color: #FF4545;
             font-size: 1.7rem;
             padding-top: 3rem;
-            margin-left:auto;
-            margin-right:auto;
-            text-align: center;
+            
         }
 
         .info_subheading{
@@ -218,13 +251,27 @@
             opacity: 100;
             transition: ease-in, 0.15s;
         }
- 
+
         .heart_icon{
             width: 5rem;
             float: right;
             padding-right: 3rem;
             padding-top: 3rem;
             opacity: 0;
+        }
+
+        .panel_mode{
+            width: 32.25rem;
+            float: bottom;
+            padding-bottom: 3rem;
+            padding-top: 23.05rem;
+            opacity: 0;
+        }
+
+
+        .microinteraction_container:hover .panel_mode{
+            opacity: 100;
+            transition: ease-in, 0.15s;
         }
       
 }
@@ -244,6 +291,15 @@
         font-size: 2.5rem;
         margin-top: 0rem;
         padding-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .build_subtitle{
+        color: #FF4545;
+        font-size: 1.5rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -353,6 +409,20 @@
         transition: ease-in, 0.15s;
     }
 
+    .panel_mode{
+        width: 21.5rem;
+        float: bottom;
+        padding-bottom: 3rem;
+        padding-top: 14.73925rem;
+        opacity: 0;
+    }
+
+
+    .microinteraction_container:hover .panel_mode{
+        opacity: 100;
+        transition: ease-in, 0.15s;
+    }
+
     
 }
 
@@ -379,6 +449,16 @@
         margin-top: 0rem;
         padding-top: 3rem;
     }
+
+    .build_subtitle{
+        color: #FF4545;
+        font-size: 1.2rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
 
     .subtitle_link{
         color: #FF784E;
@@ -453,6 +533,21 @@
         transition: ease-in, 0.15s;
     }
 
+
+    .panel_mode{
+        width: 21.5rem;
+        float: bottom;
+        padding-bottom: 3rem;
+        padding-top: 14.73925rem;
+        opacity: 0;
+    }
+
+
+    .microinteraction_container:hover .panel_mode{
+        opacity: 100;
+        transition: ease-in, 0.15s;
+    }
+    
 }
 
 

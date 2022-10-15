@@ -138,6 +138,14 @@
         opacity: 100;
         transition: ease-in, 0.15s;
     }
+
+    .copyright_tag{
+        margin-top: 8rem;
+        font-family: 'Poppins';
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
   
 
 }
@@ -272,6 +280,15 @@
             opacity: 100;
             transition: ease-in, 0.15s;
         }
+
+        .copyright_tag{
+            margin-top: 8rem;
+            font-family: 'Poppins';
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    
       
 }
 
@@ -423,6 +440,14 @@
         transition: ease-in, 0.15s;
     }
 
+    .copyright_tag{
+        margin-top: 6rem;
+        font-family: 'Poppins';
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
     
 }
 
@@ -548,6 +573,15 @@
         opacity: 100;
         transition: ease-in, 0.15s;
     }
+
+    .copyright_tag{
+        margin-top: 4rem;
+        font-family: 'Poppins';
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
     
 }
 

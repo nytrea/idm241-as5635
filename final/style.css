@@ -1,0 +1,286 @@
+
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('Inter/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'InterSemibold';
+    src: url('Inter/static/Inter-SemiBold.ttf');
+}
+
+/* desktop */
+
+    @media all and (min-width: 1024px) {
+/*     
+        .title_div{
+            background: linear-gradient(rgb(255, 248, 236), white);
+        } 
+
+        .title{
+            color: #FFAA2C;
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3rem;
+            margin-left: 8rem;
+            margin-top: 0rem;
+            padding-top: 5rem;
+        }
+    
+        .subtitle_link{
+            color: #FF784E;
+            font-size: 1rem;
+            font-family: 'PoppinsLight', Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .subtitle_link:hover{
+            color: #ffaa60;
+            transition: ease-in, 0.1s;
+        }
+
+        .subtitle{
+            margin-bottom: 2rem;
+            margin-left: 8rem;
+            padding-top: 0.5rem;
+        }
+
+        .info_div{
+            margin-left: 8rem;
+            margin-right: 8rem;
+        }
+
+        .row{
+            display: flex;
+        } 
+
+        .column_left{
+            flex: 50%;
+            padding-right: 1rem;
+        }
+
+        .column_right{
+            flex: 50%;
+            padding-left: 1rem;
+        }
+
+        .info_heading{
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            color: #FF4545;
+            font-size: 1.7rem;
+            padding-top: 3rem;
+        }
+
+        .info_subheading{
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            color: #FFAA2C;
+            font-size: 1.3rem;
+        }
+
+        .list_style{
+            margin-left: 1rem;
+            margin-right: 3rem;
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+        }
+
+        .images_div{
+            margin: 4rem 8rem 8rem 8rem;
+        }
+
+        .images_div_title{
+            color: #FFAA2C;
+            font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3rem;
+            margin-top: 6rem;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .image{
+            width: 30%;
+        } */
+
+    }
+
+ 
+
+
+/*tablet */
+ @media all and (max-width: 1024px) and (min-width: 700px) { 
+
+
+    .title_div{
+        background: linear-gradient(rgb(255, 248, 236), white);
+    } 
+
+    .title{
+        color: #FFAA2C;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.5rem;
+        margin-left: 4rem;
+        margin-top: 0rem;
+        padding-top: 5rem;
+    }
+
+    .subtitle_link{
+        color: #FF784E;
+        font-size: 0.7rem;
+        font-family: 'PoppinsLight', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .subtitle_link:hover{
+        color: #ffaa60;
+        transition: ease-in, 0.1s;
+    }
+
+    .subtitle{
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+        padding-top: 0.5rem;
+    }
+
+    .info_div{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .row{
+        display: flex;
+    } 
+
+    .column_left{
+        flex: 50%;
+        padding-right: 1rem;
+    }
+
+    .column_right{
+        flex: 50%;
+        padding-left: 1rem;
+    }
+
+    .info_heading{
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        color: #FF4545;
+        font-size: 1.2rem;
+        padding-top: 3rem;
+    }
+
+    .info_subheading{
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFAA2C;
+        font-size: 0.8rem;
+    }
+
+    .list_style{
+        margin-left: 1rem;
+        margin-right: 3rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    .images_div{
+        margin: 3rem 4rem 3rem 4rem;
+    }
+
+    .images_div_title{
+        color: #FFAA2C;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.2rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .image{
+        width: 30%;
+    }
+
+}
+ 
+
+/* mobile */
+@media all and (max-width: 700px) and (min-width: 300px) { 
+
+
+    .title_div{
+        background: linear-gradient(rgb(255, 248, 236), white);
+        }
+    
+    .title{
+        color: #FFAA2C;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.7rem;
+        margin-left: 3rem;        
+        margin-top: 0rem;
+        padding-top: 3rem;
+    }
+
+    .subtitle_link{
+        color: #FF784E;
+        font-size: 0.7rem;
+        font-family: 'PoppinsLight', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .subtitle_link:hover{
+        color: #ffaa60;
+        transition: ease-in, 0.1s;
+    }
+
+    .subtitle{
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+        padding-top: 0.5rem;
+    }
+
+    .info_div{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .info_heading{
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        color: #FF4545;
+        font-size: 1.2rem;
+        padding-top: 2rem;
+    }
+
+    .info_subheading{
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFAA2C;
+        font-size: 1rem;
+    }
+
+    .list_style{
+        margin-left: 1.5rem;
+        margin-right: 3rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+
+    .images_div{
+        margin: 1rem;
+    }
+
+    .images_div_title{
+        color: #FFAA2C;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .image{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+}
+ 

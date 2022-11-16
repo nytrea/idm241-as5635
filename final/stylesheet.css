@@ -1,0 +1,388 @@
+
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('Inter/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'InterSemibold';
+    src: url('Inter/static/Inter-SemiBold.ttf');
+}
+
+/* desktop */
+
+    @media all and (min-width: 1024px) {
+    
+        .title_div{
+            background: white;
+        } 
+
+        .title{
+            color: #000000;
+            font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 0rem;
+            padding-top: 5rem;
+        }
+    
+        .subtitle_link{
+            color: #30A2F2;
+            font-size: 1rem;
+            font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .subtitle_link:hover{
+            color: #1167c2;
+            transition: ease-in, 0.1s;
+        }
+
+        .subtitle{
+            margin-bottom: 2rem;
+            padding-top: 0.5rem;
+        }
+
+       
+        .info_div{
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+
+        .row{
+            display: flex;
+        } 
+
+        .column_left{
+            
+        }
+
+        .column_right{
+        }
+
+        .triggers_div{
+            width: 90%;
+        }
+
+        .rules_div{
+            width: 90%;
+
+        }
+
+        .feedback_div{
+            width: 90%;
+
+        }
+
+        .loopsAndModes_div{
+            width: 90%;
+
+        }
+
+
+        .info_heading{
+            font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+            color: #30A2F2;
+            font-size: 1.5rem;
+            padding-top: 3rem;
+            padding-left: 2rem;
+        }
+
+    
+
+        .list_style{
+            margin-left: 1rem;
+            margin-right: 3rem;
+            font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .images_div{
+            margin-left:auto;
+            margin-right:auto;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images_div_title{
+            color: #30A2F2;
+            font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 6rem;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .image{
+            width: 25%;
+            padding:1.5rem;
+        }
+
+        .footer{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+
+        }
+
+        .footer_credits{
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(154, 154, 154);
+        font-size: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        }
+    
+
+    }
+
+ 
+
+
+/*tablet */
+ @media all and (max-width: 1024px) and (min-width: 900px) { 
+
+    .title_div{
+        background: white;
+    } 
+
+    .title{
+        color: #000000;
+        font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 0rem;
+        padding-top: 5rem;
+    }
+
+    .subtitle_link{
+        color: #30A2F2;
+        font-size: 1rem;
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .subtitle_link:hover{
+        color: #1167c2;
+        transition: ease-in, 0.1s;
+    }
+
+    .subtitle{
+        margin-bottom: 2rem;
+        padding-top: 0.5rem;
+    }
+
+   
+    .info_div{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .row{
+        display: flex;
+    } 
+
+    .column_left{
+        
+    }
+
+    .column_right{
+    }
+
+    .triggers_div{
+        width: 90%;
+    }
+
+    .rules_div{
+        width: 90%;
+
+    }
+
+    .feedback_div{
+        width: 90%;
+
+    }
+
+    .loopsAndModes_div{
+        width: 90%;
+
+    }
+
+
+    .info_heading{
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        color: #30A2F2;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        padding-left: 2rem;
+    }
+
+
+
+    .list_style{
+        margin-left: 1rem;
+        margin-right: 3rem;
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    .images_div{
+        margin-left:auto;
+        margin-right:auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images_div_title{
+        color: #30A2F2;
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .image{
+        width: 25%;
+        padding:1.5rem;
+    }
+
+    .footer{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .footer_credits{
+    font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(154, 154, 154);
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    }
+
+}
+ 
+
+/* mobile */
+@media all and (max-width: 900px) and (min-width: 300px) { 
+
+
+    .title_div{
+        background:white;
+        }
+    
+    .title{
+        color: #000000;
+        font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        margin: 5rem auto 1rem auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .subtitle_link{
+        color: #30A2F2;
+        font-size: 1rem;
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .subtitle_link:hover{
+        color: #1167c2;
+        transition: ease-in, 0.1s;
+    }
+
+    .subtitle{
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        padding-top: 0.5rem;
+        margin: 1rem auto;
+        text-align: center;
+        width: 70%;
+
+    }
+
+    .info_div{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .info_heading{
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        color: #30A2F2;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+
+    .list_style{
+        margin-left: 1.5rem;
+        margin-right: 3rem;
+        font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+
+    .images_div{
+        margin: 1rem;
+    }
+
+    .images_div_title{
+        color: #30A2F2;
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 1.2rem;
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .image{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .footer{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+
+    }
+
+
+    .footer_credits{
+        font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(154, 154, 154);
+        font-size: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    
+
+}
+}

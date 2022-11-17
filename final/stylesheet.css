@@ -12,7 +12,7 @@
 
 /* desktop */
 
-    @media all and (min-width: 1024px) {
+    @media all and (min-width: 1200px) {
     
         .title_div{
             background: white;
@@ -48,6 +48,12 @@
             padding-top: 0.5rem;
         }
 
+        .info_subheading{
+            font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.3rem; 
+            color: #1167c2;
+
+        }
        
         .info_div{
             margin-left: 3rem;
@@ -97,10 +103,10 @@
 
         .list_style{
             margin-left: 1rem;
-            margin-right: 3rem;
+            margin-right: 1rem;
             font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1rem;
-            padding: 0.5rem 0;
+            font-size: 1.1rem;
+            padding: 0.8rem 0;
         }
 
         .images_div{
@@ -151,7 +157,7 @@
 
 
 /*tablet */
- @media all and (max-width: 1024px) and (min-width: 900px) { 
+ @media all and (max-width: 1200px) and (min-width: 900px) { 
 
     .title_div{
         background: white;
@@ -187,6 +193,12 @@
         padding-top: 0.5rem;
     }
 
+    .info_subheading{
+        font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem; 
+        color: #1167c2;
+
+    }
    
     .info_div{
         margin-left: 3rem;
@@ -195,14 +207,14 @@
 
     .row{
         display: flex;
+        flex-wrap: wrap;
     } 
 
-    .column_left{
-        
+    .column{
+        flex: 50%;
+        text-align: left;
     }
 
-    .column_right{
-    }
 
     .triggers_div{
         width: 90%;
@@ -328,6 +340,14 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
+    .info_subheading{
+        font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem; 
+        color: #1167c2;
+
+    }
+   
 
     .info_heading{
         font-family: 'InterRegular', Verdana, Geneva, Tahoma, sans-serif;

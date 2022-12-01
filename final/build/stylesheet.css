@@ -9,8 +9,291 @@
     font-family: 'InterSemibold';
     src: url('Inter/static/Inter-SemiBold.ttf');
 }
+///
 
 /* desktop */
+
+@keyframes pulse {
+    from {
+      box-shadow:  0 0 0 0 rgba(255,255,255,1),
+                   0 0 0 0 rgba(51,51,51,1);
+    }
+    to {
+      box-shadow:  0 0 0 0.65em rgba(255,255,255,1),
+                   0 0 0 1em rgba(51,51,51,0);
+    }
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  div[class^='pulse-'] {
+    background-color: rgb(51,51,51);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .pulse-single:active {
+    animation: pulse 0.2s 1 ease-out;
+  }
+
+
+  .microinteraction_div{
+    align-items: center;
+    box-shadow: 0px 10px 10px rgb(221 221 221 / 20%), 0px 10px 10px rgb(112 112 112 / 12%);
+    border-radius: 8px;
+    margin: 4rem auto;
+    display: block;
+    justify-content: center;
+    
+}
+
+.microinteraction_div:hover{
+    align-items: center;
+    box-shadow: 0px 15px 20px rgba(52, 167, 255, 0.2), 0px 12px 15px rgba(37, 141, 209, 0.12);
+    border-radius: 8px;
+    width: 25%;
+    margin: 4rem auto;
+    display: block;
+    justify-content: center;
+    transition: 0.2s;
+
+}
+
+.microinteraction_div:active{
+    
+    box-shadow: -15px 15px 20px rgba(0, 72, 128, 0.2), 20px 15px 20px rgba(0, 72, 120, 0.12);
+    transition: 0;
+    scale: 1.025;
+}
+
+.image_container {
+    position: relative;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.image_container:active{
+    background-color: black;
+}
+
+.image_container img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    vertical-align: top;
+    max-width: 100%;
+    width: 100%;
+    margin:0;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.image_container:hover img {
+    -moz-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.micro-image-container:hover a{
+    position: relative;
+    display: inline-block;
+    color: #30A2F2;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 50px;
+    width: 100%;
+    height: 8px;
+}
+
+.micro-image-container:hover a span{
+    background: #30A2F2;
+    color: #30A2F2;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.micro-image-container:hover a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#30A2F2);
+    animation: animate1 1s linear infinite;
+}
+
+
+.neon{
+    position: relative;
+    display: inline-block;
+    color: #30A2F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-top: -500px;
+    width: 100%;
+    height: 8px;
+}
+
+.neon:hover span{
+    background: #30A2F2;
+    color: #30A2F2;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.neon span{
+    position: absolute;
+    display: block;
+}
+
+.neon:hover span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#30A2F2);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+
+.graphic_style{
+    object-fit: cover;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+   }
+
+
+.micro-list{
+    margin:0;
+}
+
+.micro_title{
+    font-family: 'InterSemibold';
+    font-size: 1.5rem;
+    padding-top: 0.8rem;
+    list-style: none;
+    padding-right: 3rem;
+
+}
+
+.micro_details{
+    font-family: 'InterRegular';
+    font-size: 0.95rem;
+    padding-top: 1rem;
+    list-style: none;
+    padding-right: 3rem;
+    line-height: 26px;
+}
+
+.micro_link {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    font-family: 'InterRegular';
+    font-size: 0.95rem;
+    padding-top: 1rem;
+    color: #30A2F2;
+    margin-bottom: 0rem;
+    cursor: pointer;
+  }
+  
+  .micro_link::before,
+  .micro_link::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+  }
+  .micro_link::before {
+    background-color: #a0d5f8;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    cursor: pointer;
+  }
+  .micro_link::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+    cursor: pointer;
+
+  }
+  
+  .micro_link:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+    color: #136aa8; 
+    cursor: pointer;
+  }
+  .micro_link:hover::after {
+    transform: translate3d(0, 0, 0);
+    color: #136aa8; 
+    cursor: pointer;
+  }
+
+  .micro_link:hover{
+    color: #136aa8;
+  }
+
+
+  .micro_link:active{
+    color: #a0d5f8;
+    cursor: pointer;
+  }
+
+  .micro_link:active::after{
+    color: #a0d5f8;
+  }
+
+  
+  .micro_link span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .micro_link:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
 
     @media all and (min-width: 1200px) {
     
@@ -47,253 +330,6 @@
             margin-bottom: 2rem;
             padding-top: 0.5rem;
         }
-
-
-        .microinteraction_div{
-            align-items: center;
-            box-shadow: 0px 10px 10px rgb(221 221 221 / 20%), 0px 10px 10px rgb(112 112 112 / 12%);
-            border-radius: 8px;
-            margin: 4rem auto;
-            display: block;
-            justify-content: center;
-        }
-
-        .microinteraction_div:hover{
-            align-items: center;
-            box-shadow: 0px 12px 15px rgba(52, 167, 255, 0.2), 0px 12px 15px rgba(37, 141, 209, 0.12);
-            border-radius: 8px;
-            width: 25%;
-            margin: 4rem auto;
-            display: block;
-            justify-content: center;
-            transition: 0.1s;
-
-        }
-
-        .microinteraction_div:active{
-            
-            box-shadow: 0px 12px 15px rgba(0, 72, 128, 0.2), 0px 12px 15px rgba(0, 72, 120, 0.12);
-            
-
-        }
-
-        .image_container {
-            position: relative;
-            overflow: hidden;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            max-width: 300px;
-        }
-        
-        .image_container img {
-            -moz-transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-            vertical-align: top;
-            max-width: 100%;
-            width: 100%;
-            margin:0;
-            -moz-transition: all 0.3s;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s;
-            
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        
-        .image_container:hover img {
-            -moz-transform: scale(1.6);
-            -webkit-transform: scale(1.6);
-            transform: scale(1.6);
-            cursor: pointer;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        
-        
-        .micro-image-container:hover a{
-            position: relative;
-            display: inline-block;
-            color: #30A2F2;
-            transition: 0.5s;
-            overflow: hidden;
-            margin-right: 50px;
-            width: 100%;
-            height: 8px;
-        }
-
-        .micro-image-container:hover a span{
-            background: #30A2F2;
-            color: #30A2F2;
-             -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-        }
-       
-        .micro-image-container:hover a span:nth-child(1){
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg,transparent,#30A2F2);
-            animation: animate1 1s linear infinite;
-        }
-
-
-        .neon{
-            position: relative;
-            display: inline-block;
-            color: #30A2F2;
-            text-decoration: none;
-            text-transform: uppercase;
-            transition: 0.5s;
-            letter-spacing: 4px;
-            overflow: hidden;
-            margin-right: 50px;
-            margin-top: -500px;
-            width: 100%;
-            height: 8px;
-        }
-
-        .neon:hover span{
-            background: #30A2F2;
-            color: #30A2F2;
-             -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-        }
-
-        .neon span{
-            position: absolute;
-            display: block;
-        }
-
-        .neon:hover span:nth-child(1){
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg,transparent,#30A2F2);
-            animation: animate1 1s linear infinite;
-        }
-
-        @keyframes animate1{
-            0%{
-                left: -100%;
-            }
-            50%,100%{
-                left: 100%;
-            }
-        }
-
-
-        .graphic_style{
-            object-fit: cover;
-            display: flex;
-            width: 50%;
-            overflow: hidden;
-           }
-        
-
-        .micro-list{
-            margin:0;
-        }
-        
-        .micro_title{
-            font-family: 'InterSemibold';
-            font-size: 1.5rem;
-            padding-top: 0.8rem;
-            list-style: none;
-            padding-right: 3rem;
-
-        }
-
-        .micro_details{
-            font-family: 'InterRegular';
-            font-size: 0.95rem;
-            padding-top: 1rem;
-            list-style: none;
-            padding-right: 3rem;
-            line-height: 26px;
-        }
-
-        .micro_link {
-            overflow: hidden;
-            position: relative;
-            display: inline-block;
-            font-family: 'InterRegular';
-            font-size: 0.95rem;
-            padding-top: 1rem;
-            color: #30A2F2;
-            margin-bottom: 0rem;
-            cursor: pointer;
-          }
-          
-          .micro_link::before,
-          .micro_link::after {
-           content: '';
-            position: absolute;
-            width: 100%;
-            left: 0;
-            cursor: pointer;
-          }
-          .micro_link::before {
-            background-color: #a0d5f8;
-            height: 2px;
-            bottom: 0;
-            transform-origin: 100% 50%;
-            transform: scaleX(0);
-            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-            cursor: pointer;
-          }
-          .micro_link::after {
-            content: attr(data-replace);
-            height: 100%;
-            top: 0;
-            transform-origin: 100% 50%;
-            transform: translate3d(200%, 0, 0);
-            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-            color: #54b3d6;
-            cursor: pointer;
-    
-          }
-          
-          .micro_link:hover::before {
-            transform-origin: 0% 50%;
-            transform: scaleX(1);
-            color: #136aa8; 
-            cursor: pointer;
-          }
-          .micro_link:hover::after {
-            transform: translate3d(0, 0, 0);
-            color: #136aa8; 
-            cursor: pointer;
-          }
-
-          .micro_link:hover{
-            color: #136aa8;
-          }
-
-
-          .micro_link:active{
-            color: #a0d5f8;
-            cursor: pointer;
-          }
-
-          .micro_link:active::after{
-            color: #a0d5f8;
-          }
-
-          
-          .micro_link span {
-            display: inline-block;
-            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-          }
-          
-          .micro_link:hover span {
-            transform: translate3d(-200%, 0, 0);
-          }
-
-
-
-
 
         .info_subheading{
             font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
@@ -439,247 +475,6 @@
     }
 
 
-    .microinteraction_div{
-        align-items: center;
-        box-shadow: 0px 10px 10px rgb(221 221 221 / 20%), 0px 10px 10px rgb(112 112 112 / 12%);
-        border-radius: 8px;
-        margin: 4rem auto;
-        display: block;
-        justify-content: center;
-    }
-
-    .microinteraction_div:hover{
-        align-items: center;
-        box-shadow: 0px 12px 15px rgba(52, 167, 255, 0.2), 0px 12px 15px rgba(37, 141, 209, 0.12);
-        border-radius: 8px;
-        width: 25%;
-        margin: 4rem auto;
-        display: block;
-        justify-content: center;
-        transition: 0.1s;
-
-    }
-
-    .microinteraction_div:active{
-        
-        box-shadow: 0px 12px 15px rgba(0, 72, 128, 0.2), 0px 12px 15px rgba(0, 72, 120, 0.12);
-        
-
-    }
-
-    .image_container {
-        position: relative;
-        overflow: hidden;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        max-width: 300px;
-    }
-    
-    .image_container img {
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        vertical-align: top;
-        max-width: 100%;
-        width: 100%;
-        margin:0;
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
-        
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    
-    .image_container:hover img {
-        -moz-transform: scale(1.6);
-        -webkit-transform: scale(1.6);
-        transform: scale(1.6);
-        cursor: pointer;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    
-    
-    .micro-image-container:hover a{
-        position: relative;
-        display: inline-block;
-        color: #30A2F2;
-        transition: 0.5s;
-        overflow: hidden;
-        margin-right: 50px;
-        width: 100%;
-        height: 8px;
-    }
-
-    .micro-image-container:hover a span{
-        background: #30A2F2;
-        color: #30A2F2;
-         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-    }
-   
-    .micro-image-container:hover a span:nth-child(1){
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(90deg,transparent,#30A2F2);
-        animation: animate1 1s linear infinite;
-    }
-
-
-    .neon{
-        position: relative;
-        display: inline-block;
-        color: #30A2F2;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.5s;
-        letter-spacing: 4px;
-        overflow: hidden;
-        margin-right: 50px;
-        margin-top: -500px;
-        width: 100%;
-        height: 8px;
-    }
-
-    .neon:hover span{
-        background: #30A2F2;
-        color: #30A2F2;
-         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-    }
-
-    .neon span{
-        position: absolute;
-        display: block;
-    }
-
-    .neon:hover span:nth-child(1){
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg,transparent,#30A2F2);
-        animation: animate1 1s linear infinite;
-    }
-
-    @keyframes animate1{
-        0%{
-            left: -100%;
-        }
-        50%,100%{
-            left: 100%;
-        }
-    }
-
-
-    .graphic_style{
-        object-fit: cover;
-        display: flex;
-        width: 50%;
-        overflow: hidden;
-       }
-    
-
-    .micro-list{
-        margin:0;
-    }
-    
-    .micro_title{
-        font-family: 'InterSemibold';
-        font-size: 1.5rem;
-        padding-top: 0.8rem;
-        list-style: none;
-        padding-right: 3rem;
-
-    }
-
-    .micro_details{
-        font-family: 'InterRegular';
-        font-size: 0.95rem;
-        padding-top: 1rem;
-        list-style: none;
-        padding-right: 3rem;
-        line-height: 26px;
-    }
-
-    .micro_link {
-        overflow: hidden;
-        position: relative;
-        display: inline-block;
-        font-family: 'InterRegular';
-        font-size: 0.95rem;
-        padding-top: 1rem;
-        color: #30A2F2;
-        margin-bottom: 0rem;
-        cursor: pointer;
-      }
-      
-      .micro_link::before,
-      .micro_link::after {
-       content: '';
-        position: absolute;
-        width: 100%;
-        left: 0;
-        cursor: pointer;
-      }
-      .micro_link::before {
-        background-color: #a0d5f8;
-        height: 2px;
-        bottom: 0;
-        transform-origin: 100% 50%;
-        transform: scaleX(0);
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-        cursor: pointer;
-      }
-      .micro_link::after {
-        content: attr(data-replace);
-        height: 100%;
-        top: 0;
-        transform-origin: 100% 50%;
-        transform: translate3d(200%, 0, 0);
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-        color: #54b3d6;
-        cursor: pointer;
-
-      }
-      
-      .micro_link:hover::before {
-        transform-origin: 0% 50%;
-        transform: scaleX(1);
-        color: #136aa8; 
-        cursor: pointer;
-      }
-      .micro_link:hover::after {
-        transform: translate3d(0, 0, 0);
-        color: #136aa8; 
-        cursor: pointer;
-      }
-
-      .micro_link:hover{
-        color: #136aa8;
-      }
-
-
-      .micro_link:active{
-        color: #a0d5f8;
-        cursor: pointer;
-      }
-
-      .micro_link:active::after{
-        color: #a0d5f8;
-      }
-
-      
-      .micro_link span {
-        display: inline-block;
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-      }
-      
-      .micro_link:hover span {
-        transform: translate3d(-200%, 0, 0);
-      }
 
     .info_subheading{
         font-family: 'InterSemibold', Verdana, Geneva, Tahoma, sans-serif;
@@ -825,248 +620,7 @@
     }
 
 
-    .microinteraction_div{
-        align-items: center;
-        box-shadow: 0px 10px 10px rgb(221 221 221 / 20%), 0px 10px 10px rgb(112 112 112 / 12%);
-        border-radius: 8px;
-        margin: 4rem auto;
-        display: block;
-        justify-content: center;
-    }
 
-    .microinteraction_div:hover{
-        align-items: center;
-        box-shadow: 0px 12px 15px rgba(52, 167, 255, 0.2), 0px 12px 15px rgba(37, 141, 209, 0.12);
-        border-radius: 8px;
-        width: 25%;
-        margin: 4rem auto;
-        display: block;
-        justify-content: center;
-        transition: 0.1s;
-
-    }
-
-    .microinteraction_div:active{
-        
-        box-shadow: 0px 12px 15px rgba(0, 72, 128, 0.2), 0px 12px 15px rgba(0, 72, 120, 0.12);
-        
-
-    }
-
-    .image_container {
-        position: relative;
-        overflow: hidden;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        max-width: 300px;
-    }
-    
-    .image_container img {
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        vertical-align: top;
-        max-width: 100%;
-        width: 100%;
-        margin:0;
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
-        
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    
-    .image_container:hover img {
-        -moz-transform: scale(1.6);
-        -webkit-transform: scale(1.6);
-        transform: scale(1.6);
-        cursor: pointer;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    
-    
-    .micro-image-container:hover a{
-        position: relative;
-        display: inline-block;
-        color: #30A2F2;
-        transition: 0.5s;
-        overflow: hidden;
-        margin-right: 50px;
-        width: 100%;
-        height: 8px;
-    }
-
-    .micro-image-container:hover a span{
-        background: #30A2F2;
-        color: #30A2F2;
-         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-    }
-   
-    .micro-image-container:hover a span:nth-child(1){
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(90deg,transparent,#30A2F2);
-        animation: animate1 1s linear infinite;
-    }
-
-
-    .neon{
-        position: relative;
-        display: inline-block;
-        color: #30A2F2;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 0.5s;
-        letter-spacing: 4px;
-        overflow: hidden;
-        margin-right: 50px;
-        margin-top: -500px;
-        width: 100%;
-        height: 8px;
-    }
-
-    .neon:hover span{
-        background: #30A2F2;
-        color: #30A2F2;
-         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-    }
-
-    .neon span{
-        position: absolute;
-        display: block;
-    }
-
-    .neon:hover span:nth-child(1){
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg,transparent,#30A2F2);
-        animation: animate1 1s linear infinite;
-    }
-
-    @keyframes animate1{
-        0%{
-            left: -100%;
-        }
-        50%,100%{
-            left: 100%;
-        }
-    }
-
-
-    .graphic_style{
-        object-fit: cover;
-        display: flex;
-        width: 50%;
-        overflow: hidden;
-       }
-    
-
-    .micro-list{
-        margin:0;
-    }
-    
-    .micro_title{
-        font-family: 'InterSemibold';
-        font-size: 1.5rem;
-        padding-top: 0.8rem;
-        list-style: none;
-        padding-right: 3rem;
-
-    }
-
-    .micro_details{
-        font-family: 'InterRegular';
-        font-size: 0.95rem;
-        padding-top: 1rem;
-        list-style: none;
-        padding-right: 3rem;
-        line-height: 26px;
-    }
-
-    .micro_link {
-        overflow: hidden;
-        position: relative;
-        display: inline-block;
-        font-family: 'InterRegular';
-        font-size: 0.95rem;
-        padding-top: 1rem;
-        color: #30A2F2;
-        margin-bottom: 0rem;
-        cursor: pointer;
-      }
-      
-      .micro_link::before,
-      .micro_link::after {
-       content: '';
-        position: absolute;
-        width: 100%;
-        left: 0;
-        cursor: pointer;
-      }
-      .micro_link::before {
-        background-color: #a0d5f8;
-        height: 2px;
-        bottom: 0;
-        transform-origin: 100% 50%;
-        transform: scaleX(0);
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-        cursor: pointer;
-      }
-      .micro_link::after {
-        content: attr(data-replace);
-        height: 100%;
-        top: 0;
-        transform-origin: 100% 50%;
-        transform: translate3d(200%, 0, 0);
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-        color: #54b3d6;
-        cursor: pointer;
-
-      }
-      
-      .micro_link:hover::before {
-        transform-origin: 0% 50%;
-        transform: scaleX(1);
-        color: #136aa8; 
-        cursor: pointer;
-      }
-      .micro_link:hover::after {
-        transform: translate3d(0, 0, 0);
-        color: #136aa8; 
-        cursor: pointer;
-      }
-
-      .micro_link:hover{
-        color: #136aa8;
-      }
-
-
-      .micro_link:active{
-        color: #a0d5f8;
-        cursor: pointer;
-      }
-
-      .micro_link:active::after{
-        color: #a0d5f8;
-      }
-
-      
-      .micro_link span {
-        display: inline-block;
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-      }
-      
-      .micro_link:hover span {
-        transform: translate3d(-200%, 0, 0);
-      }
-      
     .info_div{
         margin-left: 2rem;
         margin-right: 2rem;
